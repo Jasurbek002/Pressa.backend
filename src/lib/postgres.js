@@ -11,6 +11,8 @@ async function fetch(sql,...params){
         return row
     } catch (error) {
         console.log(error)
+    }finally{
+        await cilent.release()
     }
 }
 
@@ -21,6 +23,8 @@ async function fetchAll(sql,...params){
         return rows
     } catch (error) {
         console.log(error)
+    }finally{
+        await cilent.release()
     }
 }
 
