@@ -66,8 +66,9 @@ const GETDELETED = async (req,res) =>{
 
 
 const POST = async (req,res) =>{
+    console.log(req.body,req.file)
     try {
-        const cards = await model.POST(req.body,req.file)
+        const cards = await model.POST(req.body,req.files)
         if(cards){
             res.status(200).json({
                 status:200,

@@ -33,6 +33,7 @@ const GETDELETED = async () =>{
 
 
 const POST = async ({sub_id,date,time,title,username,proffesa,turi,description,phone,phone2,thema,company},{filename}) =>{
+    console.log(sub_id,date,time,title,username,proffesa,turi,description,phone,phone2,thema,company,filename)
     try {
         let cards = await fetch(POSTSELECT,sub_id,date,time,title,username,proffesa,turi,description,phone,phone2,filename,thema,company)
         return cards
