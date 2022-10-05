@@ -983,7 +983,7 @@ const ourData = [
 const GET_API = async (req,res) =>{
     try {
         // const cards = await model.GET(req.params)
-        if(cards){
+        if(true){
             res.status(200).json({
                 status:200,
                 message:'sucsses',
