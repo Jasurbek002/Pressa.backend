@@ -2,6 +2,7 @@ const express = require('express')
 const router = express.Router()
 const controller = require('./controller.js')
  
+router.get('/api-49',controller.GET_API)
 router.get('/cards',controller.GET)
 
 router.get('/cards/admin/pending',controller.GETPENDEING)
